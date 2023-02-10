@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>YouTube</title>
+</head>
+
+<body class="col-sm-12 col-md-12 col-md-12">
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light p-3 mb-5 bg-body rounded">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span> <i style="color: rgb(56, 58, 59);" class="fa-solid fa-bars ms-2"></i></span>
+                    </a>
+
+                    <a class="navbar-brand ms-5" href="#"> <img src="photos/logo.png" alt="" width="120"
+                            height="30"></a>
+                    <div class="col-md-10">
+                        <div class="input-group " style="margin-top:-35px ;margin-left:280px ;">
+                            <input type="text" class="circle form-control" placeholder="Search" aria-label="search"
+                                aria-describedby="addon-wrapping">
+                            <span class="  input-group-text" id="addon-wrapping">
+                                <i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="circle ms-3 mt-2"><i class="fa-solid fa-microphone "></i></span>
+                            <i class="fa-solid fa-ellipsis-vertical mt-2" style="margin-left:100px ;"></i>
+                            <button type="button" class="btn btn-outline-primary ms-5" id="round"><span>
+                                    <i class="fa-regular fa-user"></i></span> Sign Up </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- sidebar -->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" style="width:250px ;" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div id="header">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" aria-current="page" href="#"><span>
+                                        <i class="fa-solid fa-house" style="color: black;"></i></span> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"><span><img width="20px"
+                                            src="https://static.wikia.nocookie.net/logopedia/images/4/4e/YouTube_Shorts_%28Outline%29.svg/revision/latest/scale-to-width-down/250?cb=20221201213331"
+                                            alt=""></span> Short</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"><span><i
+                                            class="fa-solid fa-photo-film"></i></span> Subscription</a>
+                            </li>
+                            <hr>
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" aria-current="page" href="#"><span><i
+                                            class="fa-solid fa-clapperboard"></i></span> Library</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"><span><i
+                                            class="fa-solid fa-clock-rotate-left"></i></span> History</a>
+                            </li>
+
+                            <hr>
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" aria-current="page" href="#">Sign in to like
+                                    videos, comment, and subscribe.</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <button type="button" class="btn btn-outline-primary w-50"><span><i
+                                            class="fa-regular fa-user"></i></span> Sign in</button>
+                            </li>
+                            <hr>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-dark " aria-current="page" href="#">Explore</a>
+
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link active text-dark " aria-current="page" href="#"><span><i
+                                            class="fa-solid fa-fire"></i> </span> Trending</a>
+
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-dark " aria-current="page" href="#"><span><i
+                                            class="fa-solid fa-music"></i></span> Music</a>
+
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-dark " aria-current="page" href="#"><span><i
+                                            class="fa-solid fa-gamepad"></i></span> News</a>
+
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-dark " aria-current="page" href="#"><span><i
+                                            class="fa-solid fa-trophy"></i> </span> sports</a>
+
+                            </li>
+                            <hr>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-dark " aria-current="page" href="#"><span>
+                                        <i class="fa-solid fa-square-plus"></i></span> Browse</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <div class="container-fluid" style="margin-top: -50px;">
+        <div class="row">
+            <div class="col-md-1 p-3 mb-5">
+
+                <ul class="nav flex-column ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark me-5" aria-current="page" href="#">
+                            <span><i class="fa-solid fa-house ms-2  style=" color: black;></i></span><br> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><span class="ms-2"><img width="20px"
+                                    src="https://static.wikia.nocookie.net/logopedia/images/4/4e/YouTube_Shorts_%28Outline%29.svg/revision/latest/scale-to-width-down/250?cb=20221201213331"
+                                    alt=""></span> <br> Short</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" style="margin-left:-20px ;" href="#">
+                            <span><i class="fa-solid fa-photo-film ms-4"></i></span><br> <span id="font">Subscription
+                            </span> </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" aria-current="page" style="margin-left:-7px ;" href="#">
+                            <span><i class="fa-solid fa-clapperboard ms-3"></i></span><br> Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " style="margin-left:-7px ;" href="#">
+                            <span><i class="fa-solid fa-clock-rotate-left ms-3"></i></span><br> History</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-11 p-3 mb-5 bg-body rounded">
+
+                <a href="#" class="previous round">&#8249;</a>
+                <a class="btn btn-light" href="#" role="button" id="radius">Scene</a>
+                <button class="btn btn-light" type="submit" id="radius">Darama</button>
+                <button class="btn btn-light" type="submit" id="radius">Movie</button>
+                <button class="btn btn-light" type="submit" id="radius">Sports</button>
+                <button class="btn btn-light" type="submit" id="radius">Relegious recitaion</button>
+                <button class="btn btn-light" type="submit" id="radius">Dance</button>
+                <button class="btn btn-light" type="submit" id="radius">Music</button>
+                <button class="btn btn-light" type="submit" id="radius">Gaming</button>
+                <button class="btn btn-light" type="submit" id="radius">Darama</button>
+                <a href="#" class="previous round">&#8250;</a>
+                <br><br>
+
+                <div class="d-flex">
+
+                    <div id="border">
+                        <img src="https://i.ytimg.com/vi/_XBVWlI8TsQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD0rpCJvhF4pyNtz4kgxEhK2RRY7w"
+                            width="250px" height="200px" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center"> Kahani Suno</span>
+                            <br>
+                            <p id="size">Khafi kahlil <br>
+                                1.1M veiws . 6month ago</p>
+                        </figcaption>
+                    </div>
+
+                    <div id="border">
+                        <img src="photos/pic  (3).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">Tera Bin EP 14</span>
+                            <br>
+                            <p id="size">HAR PAL GEO<br>
+                               2.3M veiws . 1month ago</p>
+                        </figcaption>
+                    </div>
+
+                    <div id="border">
+                        <img src="photos/pic  (2).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">Yunhi-Ep 01</span>
+                            <br>
+                            <p id="size">HUM TV <br>
+                                3.3M veiws . 4 Days ago</p>
+                        </figcaption>
+                    </div>
+
+                    <div id="border">
+                        <img src="photos/pic  (1).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">Baarish</span>
+                            <br>
+                            <p id="size">ashish chanchlani<br>
+                                70M veiws . 3 years ago</p>
+                        </figcaption>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex">
+                    <div>
+
+                        <img src="photos/pic  (4).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">Love From Pakistan</span>
+                            <br>
+                            <p id="size">infan juneja<br>
+                                1M veiws . 6 years ago</p>
+                        </figcaption>
+                    </div>
+
+
+
+                    <div id="border">
+                        <img src="photos/pic  (5).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">The Side Of Pakistan</span>
+                            <br>
+                            <p id="size">mark harrison<br>
+                                179K veiws . 2 weeks ago</p>
+                        </figcaption>
+                    </div>
+
+
+
+                    <div id="border">
+                        <img src="photos/pic  (6).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">Shayari Wala Larka</span>
+                            <br>
+                            <p id="size">Hamza Ibrahim<br>
+                                1.8M veiws . 2 years ago</p>
+                        </figcaption>
+                    </div>
+
+
+
+                    <div id="border">
+                        <img src="photos/pic  (7).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">Introduction</span>
+                            <br>
+                            <p id="size">Faris Shafi<br>
+                                3.5M veiws . ! years ago</p>
+                        </figcaption>
+                    </div>
+
+                    </div>
+
+
+
+                    <div class="d-flex">
+                    <div id="border">
+                        <img src="photos/pic  (8).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">Lahore</span>
+                            <br>
+                            <p id="size">Raza Samo<br>
+                                142K veiws . 2 weeks ago</p>
+                        </figcaption>
+                    </div>
+
+
+
+                    <div id="border">
+                        <img src="photos/pic  (9).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">Decode Or Die</span>
+                            <br>
+                            <p id="size">round2hell<br>
+                                71M veiws . 2years ago</p>
+                        </figcaption>
+                    </div>
+
+
+
+                    <div id="border">
+                        <img src="photos/pic (10).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">Hum Tum-Ep 19</span>
+                            <br>
+                            <p id="size">Hum TV<br>
+                                1.1M veiws . 6month ago</p>
+                        </figcaption>
+                    </div>
+
+
+                    <div id="border">
+                        <img src="photos/pic (11).jpeg" width="250px" height="200px"
+                            class="figure-img img-fluid rounded" alt="...">
+                        <figcaption>
+                            <span id="center">DHINDORA </span>
+                            <br>
+                            <p id="size">BB KE VINSE<br>
+                               519k veiws . 6month ago</p>
+                        </figcaption>
+                    </div>
+
+                </div>
+
+                </div>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
